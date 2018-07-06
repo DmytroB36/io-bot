@@ -1,0 +1,27 @@
+<ion-list>
+
+  <ion-item>
+    <ion-card>
+      <ion-card-header>
+        Answer
+      </ion-card-header>
+      <ion-card-content [textContent]="answer">
+
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label stacked>Ask a question</ion-label>
+    <ion-input type="text" [(ngModel)]="question" (ngModelChange)="takeQuestion($event)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+
+    <ion-input type="text" [(ngModel)]="question" [readonly]="true"></ion-input>
+
+  </ion-item>
+
+</ion-list>
